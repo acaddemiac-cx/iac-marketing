@@ -59,15 +59,17 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
 - [x] **T15** Acortar a 60 caracteres los 63 títulos largos.
   - En curso, auditoría de control 2026-11-23: Quedan 51 de 63.
   - Verificado 2026-11-24: solo quedan 3 títulos largos y son páginas 2+ de categorías (normal).
-- [ ] **T16** Escribir las 47 meta descripciones que faltan (21 páginas, 25 categorías y la de autor).
+- [x] **T16** Escribir las 47 meta descripciones que faltan (21 páginas, 25 categorías y la de autor).
   - En curso, auditoría de control 2026-11-23: Quedan 4: /compra-una-licencia-de-creo-y-obten-una-segunda-a-mitad-de-precio/, /curso-revit-architecture-basico/, /estaremos-presentes-en-la-feria-de-expoconstruccion-y-diseno-2019/, /innovation-day-bentley/.
   - Control 2026-11-24: quedan 2: /innovation-day-bentley/ y /estaremos-presentes-en-la-feria-de-expoconstruccion-y-diseno-2019/.
+  - Verificado 2026-11-24: todas las páginas indexables tienen meta descripción.
 - [x] **T17** Diferenciar los 41 grupos de descripciones duplicadas y acortar las 15 largas.
   - En curso, auditoría de control 2026-11-23: 0 duplicadas entre páginas distintas (las 9 que quedan son páginas 2+ de categorías, es normal). Queda 1 larga: /power-bi-2026-copilot-ia-actualizaciones-guia/.
   - Verificado 2026-11-24: sin descripciones duplicadas entre páginas distintas ni descripciones largas; solo se repiten en páginas 2+ de categorías (normal).
 - [ ] **T18** H1 en 38 páginas; un solo H1 en las 2 políticas de datos.
   - En curso, auditoría de control 2026-11-23: Quedan 13 sin H1: /contacto/, /ec/contacto/, /blogs/ y 10 páginas de eventos. Ya no hay páginas con dos H1.
   - Control 2026-11-24: quedan 5 sin H1: /blogs/, /congreso-inteligencia-artificial/, /cata-de-vinos-solidworks-2026/, /live-projectwise-bundle/, /live-synchro-y-primavera/. En /live-conversatorio/ el H1 dice "LIVE BIM" aunque el evento es de OpenFlows.
+  - Control 2026-11-24: solo queda /blogs/: la página no tiene ningún encabezado visible (solo el listado de artículos); hay que añadir un widget de encabezado H1.
 - [ ] **T19** Decidir qué hacer con cada página de evento pasado.
 - [ ] **T21** Páginas reales de Servicios y Productos (6 URLs), deshaciendo T05.
 
@@ -77,9 +79,10 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
 - [x] **T22** Limpiar los 53 artículos de 2014–2019 (ver `datos/blog-2014-2019.csv`).
   - Verificado 2026-11-24: los 53 artículos redirigen con 301 a /blogs/.
 - [ ] **T23** Corregir 3 URLs con errores de escritura y dejar 301.
-- [ ] **T24** Texto alt en 1.043 imágenes de 308 páginas.
+- [x] **T24** Texto alt en 1.043 imágenes de 308 páginas.
   - En curso, auditoría de control 2026-11-23: Quedan 961 imágenes sin alt (antes 1.043).
   - Control 2026-11-24: quedan 115 imágenes distintas sin alt (antes 334): 56 son íconos decorativos (correcto dejarlas vacías) y 59 son imágenes dentro de artículos del blog que guardan su propio alt en el artículo, más 2 de /innovation-day-bentley/.
+  - Verificado 2026-11-24: 0 imágenes de contenido sin alt; quedan vacías solo 56 íconos decorativos (correcto).
 - [ ] **T25** Comprimir imágenes y pasarlas a WebP.
 - [ ] **T26** Caché de HTML en Cloudflare.
 - [ ] **T29** Repetir la auditoría al cerrar cada fase.
