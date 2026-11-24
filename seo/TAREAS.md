@@ -51,7 +51,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
 
 ## Fase 2
 
-- [ ] **T11** Contenido propio de cada país en productos y servicios.
+- [-] **T11** Contenido propio de cada país en productos y servicios.
+  - Descartada 2026-11-24: el equipo decidió dejarla como está.
 - [x] **T13** Títulos únicos por país en 11 grupos duplicados.
   - Verificado 2026-11-23 (auditoría de control): 0 títulos duplicados entre páginas indexables.
 - [x] **T14** Reescribir los títulos cortos o genéricos (formato: `Licencias [Producto] en [País] | Distribuidor oficial | IAC Latam`).
@@ -73,7 +74,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Control 2026-11-24: solo queda /blogs/: la página no tiene ningún encabezado visible (solo el listado de artículos); hay que añadir un widget de encabezado H1.
   - Control 2026-11-24: /blogs/ sigue sin H1 en el sitio (2026-11-24): el texto "Blog de IAC Latam" está solo en el título SEO y la descripción, no como encabezado visible.
 - [ ] **T19** Decidir qué hacer con cada página de evento pasado.
-- [ ] **T21** Páginas reales de Servicios y Productos (6 URLs), deshaciendo T05.
+- [-] **T21** Páginas reales de Servicios y Productos (6 URLs), deshaciendo T05.
+  - Descartada 2026-11-24: el equipo decidió dejarla como está.
 
 ## Fase 3
 
