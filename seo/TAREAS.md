@@ -47,6 +47,7 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Verificado 2026-11-23 (auditoría de control): Sin "Asisitida"; /mx/productos/microsoft-365/ ya dice México.
 - [ ] **T27** Comprobar que `http://`, `http://www.` y `https://www.` redirigen con un solo 301.
 - [ ] **T28** Search Console y Bing Webmaster Tools; exportar Rendimiento e Indexación a `seo/datos/`.
+  - Control 2026-11-24: Google Search Console listo según el equipo; Bing Webmaster Tools en espera (unos 2 días). Pendiente: subir los CSV de Rendimiento e Indexación a seo/datos/.
 
 ## Fase 2
 
@@ -70,6 +71,7 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - En curso, auditoría de control 2026-11-23: Quedan 13 sin H1: /contacto/, /ec/contacto/, /blogs/ y 10 páginas de eventos. Ya no hay páginas con dos H1.
   - Control 2026-11-24: quedan 5 sin H1: /blogs/, /congreso-inteligencia-artificial/, /cata-de-vinos-solidworks-2026/, /live-projectwise-bundle/, /live-synchro-y-primavera/. En /live-conversatorio/ el H1 dice "LIVE BIM" aunque el evento es de OpenFlows.
   - Control 2026-11-24: solo queda /blogs/: la página no tiene ningún encabezado visible (solo el listado de artículos); hay que añadir un widget de encabezado H1.
+  - Control 2026-11-24: /blogs/ sigue sin H1 en el sitio (2026-11-24): el texto "Blog de IAC Latam" está solo en el título SEO y la descripción, no como encabezado visible.
 - [ ] **T19** Decidir qué hacer con cada página de evento pasado.
 - [ ] **T21** Páginas reales de Servicios y Productos (6 URLs), deshaciendo T05.
 
@@ -78,7 +80,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
 - [ ] **T20** Ampliar a unas 800 palabras las 9 categorías de producto escasas.
 - [x] **T22** Limpiar los 53 artículos de 2014–2019 (ver `datos/blog-2014-2019.csv`).
   - Verificado 2026-11-24: los 53 artículos redirigen con 301 a /blogs/.
-- [ ] **T23** Corregir 3 URLs con errores de escritura y dejar 301.
+- [x] **T23** Corregir 3 URLs con errores de escritura y dejar 301.
+  - Verificado 2026-11-24: las 3 URLs nuevas responden 200, las viejas redirigen con 301 y no quedan enlaces internos a las viejas.
 - [x] **T24** Texto alt en 1.043 imágenes de 308 páginas.
   - En curso, auditoría de control 2026-11-23: Quedan 961 imágenes sin alt (antes 1.043).
   - Control 2026-11-24: quedan 115 imágenes distintas sin alt (antes 334): 56 son íconos decorativos (correcto dejarlas vacías) y 59 son imágenes dentro de artículos del blog que guardan su propio alt en el artículo, más 2 de /innovation-day-bentley/.
