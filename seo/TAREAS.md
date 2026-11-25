@@ -92,7 +92,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Verificado 2026-11-24: 0 imágenes de contenido sin alt; quedan vacías solo 56 íconos decorativos (correcto).
 - [x] **T25** Comprimir imágenes y pasarlas a WebP.
   - Verificado 2026-11-25: cerrada en parcial por decisión del equipo: la portada sirve 22 de 28 imágenes en WebP y /productos/bentley-openroads/ bajó de 4,0 a 2,1 MB; el resto de imágenes forma parte de estructuras que se rompen al cambiarlas. Quedaron 6 archivos borrados que todavía usan 5 páginas (ver T32).
-- [ ] **T26** Caché de HTML en Cloudflare.
+- [-] **T26** Caché de HTML en Cloudflare.
+  - Descartada 2026-11-25: el equipo prefiere no instalar un plugin de caché para no arriesgar el chatbot ni WhatsApp. La respuesta del servidor (0,4–0,8 s) se considera aceptable.
 - [ ] **T29** Repetir la auditoría al cerrar cada fase.
 
 ## Hallazgos de la auditoría de control (2026-11-23)
