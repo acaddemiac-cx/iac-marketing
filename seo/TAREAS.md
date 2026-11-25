@@ -68,11 +68,12 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
 - [x] **T17** Diferenciar los 41 grupos de descripciones duplicadas y acortar las 15 largas.
   - En curso, auditoría de control 2026-11-23: 0 duplicadas entre páginas distintas (las 9 que quedan son páginas 2+ de categorías, es normal). Queda 1 larga: /power-bi-2026-copilot-ia-actualizaciones-guia/.
   - Verificado 2026-11-24: sin descripciones duplicadas entre páginas distintas ni descripciones largas; solo se repiten en páginas 2+ de categorías (normal).
-- [ ] **T18** H1 en 38 páginas; un solo H1 en las 2 políticas de datos.
+- [x] **T18** H1 en 38 páginas; un solo H1 en las 2 políticas de datos.
   - En curso, auditoría de control 2026-11-23: Quedan 13 sin H1: /contacto/, /ec/contacto/, /blogs/ y 10 páginas de eventos. Ya no hay páginas con dos H1.
   - Control 2026-11-24: quedan 5 sin H1: /blogs/, /congreso-inteligencia-artificial/, /cata-de-vinos-solidworks-2026/, /live-projectwise-bundle/, /live-synchro-y-primavera/. En /live-conversatorio/ el H1 dice "LIVE BIM" aunque el evento es de OpenFlows.
   - Control 2026-11-24: solo queda /blogs/: la página no tiene ningún encabezado visible (solo el listado de artículos); hay que añadir un widget de encabezado H1.
   - Control 2026-11-24: /blogs/ sigue sin H1 en el sitio (2026-11-24): el texto "Blog de IAC Latam" está solo en el título SEO y la descripción, no como encabezado visible.
+  - Verificado 2026-11-25: /blogs/ ya tiene H1 ("Blog de IAC Latam"); ninguna página indexable sin H1.
 - [ ] **T19** Decidir qué hacer con cada página de evento pasado.
 - [-] **T21** Páginas reales de Servicios y Productos (6 URLs), deshaciendo T05.
   - Descartada 2026-11-24: el equipo decidió dejarla como está.
@@ -88,7 +89,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - En curso, auditoría de control 2026-11-23: Quedan 961 imágenes sin alt (antes 1.043).
   - Control 2026-11-24: quedan 115 imágenes distintas sin alt (antes 334): 56 son íconos decorativos (correcto dejarlas vacías) y 59 son imágenes dentro de artículos del blog que guardan su propio alt en el artículo, más 2 de /innovation-day-bentley/.
   - Verificado 2026-11-24: 0 imágenes de contenido sin alt; quedan vacías solo 56 íconos decorativos (correcto).
-- [ ] **T25** Comprimir imágenes y pasarlas a WebP.
+- [x] **T25** Comprimir imágenes y pasarlas a WebP.
+  - Verificado 2026-11-25: cerrada en parcial por decisión del equipo: la portada sirve 22 de 28 imágenes en WebP y /productos/bentley-openroads/ bajó de 4,0 a 2,1 MB; el resto de imágenes forma parte de estructuras que se rompen al cambiarlas. Quedaron 6 archivos borrados que todavía usan 5 páginas (ver T32).
 - [ ] **T26** Caché de HTML en Cloudflare.
 - [ ] **T29** Repetir la auditoría al cerrar cada fase.
 
@@ -98,3 +100,9 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Verificado 2026-11-24: los 3 artículos redirigen con 301 a la portada.
 - [x] **T31** Dos enlaces internos todavía pasan por una redirección: `/inteligencia-artificial/` (en 3 artículos de agentes de IA; cambiar por `/productos/inteligencia-artificial/`) y `/author/iac/` (lo pone el tema en las categorías; quitar el enlace al autor o apuntarlo a `/nosotros/`).
   - Verificado 2026-11-24: los enlaces apuntan a /productos/inteligencia-artificial/ y las categorías ya no enlazan al autor.
+- [ ] **T32** Imágenes borradas que siguen en uso (encontrado 2026-11-25). Estos archivos ya no existen en el servidor (404) y Cloudflare todavía muestra la copia vieja, así que se verán rotos cuando expire la caché:
+  - `2026/03/OpenRoads-Galeria-1.png` → en el carrusel de `/mx/productos/bentley-openroads/` y `/ec/productos/bentley-openroads/` (la versión de Colombia ya usa `OpenRoads-Galeria-1.jpg`)
+  - `2026/03/bentley-openflows.png` → en `/mx/productos/bentley-openflows/` y `/ec/productos/bentley-openflows/`
+  - `2026/07/bentley-openflows-mexico-modelacion-hidraulica.jpg` → en `/mx/productos/bentley-openflows/`
+  - `2026/07/bentley-openflows-ecuador-modelacion-hidraulica.jpg` → en `/ec/productos/bentley-openflows/`
+  - `2026/07/draftsight-colombia-licencias-cad-dwg.jpg` → en `/productos/solidworks-draftsight/`
