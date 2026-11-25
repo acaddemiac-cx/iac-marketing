@@ -102,7 +102,7 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Verificado 2026-11-24: los 3 artículos redirigen con 301 a la portada.
 - [x] **T31** Dos enlaces internos todavía pasan por una redirección: `/inteligencia-artificial/` (en 3 artículos de agentes de IA; cambiar por `/productos/inteligencia-artificial/`) y `/author/iac/` (lo pone el tema en las categorías; quitar el enlace al autor o apuntarlo a `/nosotros/`).
   - Verificado 2026-11-24: los enlaces apuntan a /productos/inteligencia-artificial/ y las categorías ya no enlazan al autor.
-- [ ] **T32** Imágenes borradas que siguen en uso (encontrado 2026-11-25). Estos archivos ya no existen en el servidor (404) y Cloudflare todavía muestra la copia vieja, así que se verán rotos cuando expire la caché:
+- [x] **T32** Imágenes borradas que siguen en uso (encontrado 2026-11-25). Estos archivos ya no existen en el servidor (404) y Cloudflare todavía muestra la copia vieja, así que se verán rotos cuando expire la caché:
   - `2026/03/OpenRoads-Galeria-1.png` → en el carrusel de `/mx/productos/bentley-openroads/` y `/ec/productos/bentley-openroads/` (la versión de Colombia ya usa `OpenRoads-Galeria-1.jpg`)
   - `2026/03/bentley-openflows.png` → en `/mx/productos/bentley-openflows/` y `/ec/productos/bentley-openflows/`
   - `2026/07/bentley-openflows-mexico-modelacion-hidraulica.jpg` → en `/mx/productos/bentley-openflows/`
@@ -113,3 +113,4 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
     - `2026/08/ChatGPT-Image-25-ago-2026-09_54_49-1024x1024.png` → og:image de `/live-bim/`
     - `2026/11/LIVES-BENTLEY-Q4-2026-Interoperabilidad-819x1024.png` → og:image de `/live-synchro-y-primavera/`
   - 2026-11-25: las imágenes de `/live-bim/` y `/live-synchro-y-primavera/` se dejan así porque esas páginas se van a redirigir (T19).
+  - Verificado 2026-11-25: Civil WorkSuite de México y Ecuador ya usa CivilWorksuite-1_.jpg. En todo el sitio (1.850 imágenes) solo quedan las 2 imágenes de redes de /live-bim/ y /live-synchro-y-primavera/, que se dejan así hasta redirigir esas páginas (T19).
