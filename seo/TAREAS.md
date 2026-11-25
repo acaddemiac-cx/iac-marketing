@@ -45,7 +45,8 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - Verificado 2026-11-23 (auditoría de control): /mx/ declara es-MX y /ec/ declara es-EC.
 - [x] **T12** Corregir "Asisitida" (Archicad ×3), "en Ecuador" en `/mx/productos/microsoft-365/` y "creo" en `/category/creo/`.
   - Verificado 2026-11-23 (auditoría de control): Sin "Asisitida"; /mx/productos/microsoft-365/ ya dice México.
-- [ ] **T27** Comprobar que `http://`, `http://www.` y `https://www.` redirigen con un solo 301.
+- [x] **T27** Comprobar que `http://`, `http://www.` y `https://www.` redirigen con un solo 301.
+  - Hecha 2026-11-25 según el equipo (no se puede comprobar desde el entorno de Claude: solo tiene acceso a https://iaclatam.com).
 - [ ] **T28** Search Console y Bing Webmaster Tools; exportar Rendimiento e Indexación a `seo/datos/`.
   - Control 2026-11-24: Google Search Console listo según el equipo; Bing Webmaster Tools en espera (unos 2 días). Pendiente: subir los CSV de Rendimiento e Indexación a seo/datos/.
 
