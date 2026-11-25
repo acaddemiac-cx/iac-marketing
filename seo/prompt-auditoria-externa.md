@@ -110,20 +110,105 @@ Pendiente conocido: varias páginas de eventos pasados (/live-*, /cata-de-vinos-
 - Si cada país muestra sus datos de contacto propios.
 - Señales que deberían existir fuera del sitio (perfil de Google Business, LinkedIn, directorios de partners) y si el sitio enlaza a ellas.
 
-# 5. FORMATO DE ENTREGA
+# 5. SISTEMA DE PUNTUACIÓN (de 1 a 100)
+
+Califica el sitio con una puntuación de 1 a 100, donde 100 es excelente y 1 es pésimo.
+
+## 5.1 Puntuación por área
+Califica cada área de 1 a 100. Empieza en 100 y resta por cada problema confirmado según su impacto y su alcance:
+
+| Impacto del problema | Afecta a pocas páginas (menos del 10 %) | Afecta a muchas páginas (10 % o más) o a una página clave (portada, contacto, productos principales) |
+| --- | --- | --- |
+| Alto (impide indexar, posicionar o convertir) | −10 | −20 |
+| Medio (perjudica pero no bloquea) | −5 | −10 |
+| Bajo (mejora menor) | −2 | −4 |
+
+- La puntuación mínima de un área es 1.
+- Los problemas "No verificado" no restan puntos; anótalos aparte.
+- Las decisiones del equipo (sección 2) no restan puntos, salvo que encuentres un riesgo grave; en ese caso explícalo.
+- Muestra el cálculo de cada área: puntuación inicial, cada resta con su ID de hallazgo y el resultado.
+
+## 5.2 Puntuación global
+La puntuación global es el promedio ponderado de las áreas:
+
+| Área | Peso |
+| --- | --- |
+| Rastreo e indexación | 20 % |
+| SEO internacional (Colombia, México, Ecuador) | 15 % |
+| SEO on-page | 15 % |
+| Contenido y E-E-A-T | 15 % |
+| Imágenes y multimedia | 10 % |
+| Rendimiento y experiencia móvil | 10 % |
+| Datos estructurados | 5 % |
+| Seguridad y aspectos técnicos | 5 % |
+| Búsqueda con IA | 5 % |
+
+Si no pudiste revisar un área, no la inventes: déjala sin nota, reparte su peso entre las demás y dilo en la portada.
+
+## 5.3 Escala
+| Puntuación | Calificación | Color |
+| --- | --- | --- |
+| 90–100 | Excelente | Verde |
+| 75–89 | Bueno | Verde claro |
+| 60–74 | Aceptable | Amarillo |
+| 40–59 | Deficiente | Naranja |
+| 1–39 | Crítico | Rojo |
+
+# 6. FORMATO DE ENTREGA
+
+Quiero un informe completo y detallado, no un resumen. Incluye todos los problemas que encuentres, por pequeños que sean. Si en un área no encuentras problemas, dilo explícitamente y explica qué revisaste para llegar a esa conclusión.
 
 Entrega el informe en este orden:
 
-1. Resumen ejecutivo (máximo 10 líneas): estado general con una nota del 1 al 10 por área (rastreo, internacional, on-page, contenido, datos estructurados, imágenes, rendimiento, búsqueda con IA), los 5 problemas más importantes y los 5 cambios rápidos de mayor impacto.
-2. Alcance: cuántas URLs revisaste, cómo (herramientas o método) y qué no pudiste revisar.
-3. Hallazgos por área, en una tabla con estas columnas:
-   | ID | Área | Problema | Evidencia (URL y dato exacto) | Páginas afectadas (número) | Impacto (Alto/Medio/Bajo) | Esfuerzo (Bajo/Medio/Alto) | Solución concreta (paso a paso, en WordPress/Elementor/Yoast cuando aplique) | Estado (Nuevo / Ya corregido y bien / Decisión del equipo / No verificado) |
-4. Plan de acción priorizado en tres bloques: urgente (esta semana), alto impacto (este mes) y mejoras de largo plazo.
-5. Lista completa de URLs afectadas por cada hallazgo, al final como anexo (o en un CSV si puedes generarlo).
-6. Qué datos o accesos adicionales mejorarían la auditoría (por ejemplo Search Console, Analytics o un rastreo con renderizado).
+## Portada
+- Título: "Auditoría SEO de iaclatam.com", fecha de la auditoría y URL.
+- La puntuación global en grande (por ejemplo "78 / 100") con su calificación y su color según la escala.
+- Una tabla con la puntuación de cada área, su calificación y su color.
+- Una frase que resuma el estado del sitio.
+- Las 3 áreas más débiles y los 3 puntos fuertes del sitio.
+
+## 1. Resumen ejecutivo (una página)
+- Estado general del sitio explicado para la dirección, sin tecnicismos.
+- Los 5 problemas más importantes, con su impacto en el negocio.
+- Los 5 cambios rápidos de mayor impacto (menos de un día de trabajo cada uno).
+- Qué mejoró respecto de la auditoría del 23 de noviembre de 2026 (sección 2), si lo pudiste comprobar.
+
+## 2. Alcance y método
+- Cuántas URLs revisaste, por tipo (portadas, productos, servicios, artículos, categorías, eventos y otras).
+- Herramientas o método usados, y si mediste con navegador o solo leyendo el HTML.
+- Qué no pudiste revisar y por qué.
+
+## 3. Hallazgos detallados por área
+Una sección por cada área de la sección 4 de este prompt (4.1 a 4.10), en ese orden. En cada una:
+- La puntuación del área, su calificación y el cálculo (sección 5.1).
+- Qué está bien en esa área (para no tocar lo que funciona).
+- Cada problema encontrado, con:
+  - ID (por ejemplo IND-01, INT-03, ONP-07).
+  - Qué pasa, explicado en una o dos frases simples.
+  - Por qué importa para el negocio.
+  - Evidencia: URL exacta y el dato que lo demuestra (fragmento de HTML, cabecera HTTP, código de estado o medida).
+  - Páginas afectadas: número y hasta 10 ejemplos de URL (la lista completa va en el anexo).
+  - Impacto (Alto/Medio/Bajo) y esfuerzo (Bajo/Medio/Alto).
+  - Solución paso a paso, diciendo exactamente dónde se cambia (por ejemplo "Yoast → Ajustes → Categorías y etiquetas" o "Elementor → widget Encabezado → Etiqueta HTML").
+  - Cómo comprobar que quedó resuelto.
+  - Estado: Nuevo / Ya corregido y bien / Decisión del equipo / No verificado.
+
+## 4. Tabla consolidada de hallazgos
+Todos los hallazgos en una sola tabla, ordenados de mayor a menor impacto:
+| ID | Área | Problema | Páginas afectadas | Impacto | Esfuerzo | Puntos restados | Estado |
+
+## 5. Plan de acción priorizado
+- Urgente (esta semana): problemas de impacto alto y esfuerzo bajo.
+- Alto impacto (este mes).
+- Mejoras de largo plazo.
+- Para cada bloque, la puntuación global estimada que tendría el sitio al completarlo.
+
+## 6. Anexos
+- Lista completa de URLs afectadas por cada hallazgo (o un CSV si puedes generarlo).
+- Datos o accesos que mejorarían la auditoría (por ejemplo Search Console, Analytics o un rastreo con renderizado de JavaScript).
 
 Reglas del informe:
 - Escribe para un equipo de marketing que no es técnico: explica cada problema en una frase simple antes del detalle técnico.
-- Cada recomendación debe decir exactamente dónde se cambia (por ejemplo "Yoast → Ajustes → Categorías y etiquetas" o "Elementor → widget Encabezado → Etiqueta HTML").
 - No recomiendes instalar plugins sin explicar el riesgo para el chatbot, WhatsApp y Elementor.
 - No mezcles lo que comprobaste con lo que supones: marca siempre "No verificado" cuando corresponda.
+- No infles ni rebajes la puntuación: cada punto restado tiene que corresponder a un hallazgo con evidencia.
