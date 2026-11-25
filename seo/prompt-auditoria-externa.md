@@ -133,7 +133,7 @@ La puntuación global es el promedio ponderado de las áreas:
 
 | Área | Peso |
 | --- | --- |
-| Rastreo e indexación | 20 % |
+| Rastreo e indexación | 15 % |
 | SEO internacional (Colombia, México, Ecuador) | 15 % |
 | SEO on-page | 15 % |
 | Contenido y E-E-A-T | 15 % |
@@ -142,6 +142,7 @@ La puntuación global es el promedio ponderado de las áreas:
 | Datos estructurados | 5 % |
 | Seguridad y aspectos técnicos | 5 % |
 | Búsqueda con IA | 5 % |
+| SEO local y de marca | 5 % |
 
 Si no pudiste revisar un área, no la inventes: déjala sin nota, reparte su peso entre las demás y dilo en la portada.
 
