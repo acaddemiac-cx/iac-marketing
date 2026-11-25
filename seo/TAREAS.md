@@ -112,3 +112,4 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
     - `2026/03/CivilWorksuite-1.png` → imagen visible en `/mx/productos/bentley-civil-worksuite/` y `/ec/productos/bentley-civil-worksuite/` (Colombia usa `CivilWorksuite-1_.jpg`)
     - `2026/08/ChatGPT-Image-25-ago-2026-09_54_49-1024x1024.png` → og:image de `/live-bim/`
     - `2026/11/LIVES-BENTLEY-Q4-2026-Interoperabilidad-819x1024.png` → og:image de `/live-synchro-y-primavera/`
+  - 2026-11-25: las imágenes de `/live-bim/` y `/live-synchro-y-primavera/` se dejan así porque esas páginas se van a redirigir (T19).
