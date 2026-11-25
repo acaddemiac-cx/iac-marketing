@@ -108,3 +108,7 @@ Marca cada tarea con `[x]` al terminarla y anota debajo la fecha y qué se hizo.
   - `2026/07/bentley-openflows-mexico-modelacion-hidraulica.jpg` → en `/mx/productos/bentley-openflows/`
   - `2026/07/bentley-openflows-ecuador-modelacion-hidraulica.jpg` → en `/ec/productos/bentley-openflows/`
   - `2026/07/draftsight-colombia-licencias-cad-dwg.jpg` → en `/productos/solidworks-draftsight/`
+  - Control 2026-11-25: las 5 páginas de la lista quedaron bien (138 imágenes, todas responden 200). Revisión de todo el sitio: quedan 3 casos más:
+    - `2026/03/CivilWorksuite-1.png` → imagen visible en `/mx/productos/bentley-civil-worksuite/` y `/ec/productos/bentley-civil-worksuite/` (Colombia usa `CivilWorksuite-1_.jpg`)
+    - `2026/08/ChatGPT-Image-25-ago-2026-09_54_49-1024x1024.png` → og:image de `/live-bim/`
+    - `2026/11/LIVES-BENTLEY-Q4-2026-Interoperabilidad-819x1024.png` → og:image de `/live-synchro-y-primavera/`
